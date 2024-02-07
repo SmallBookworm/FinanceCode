@@ -44,7 +44,7 @@ model = gensim.models.Word2Vec(text_list2, vector_size=100, window=5, min_count=
 # 查看 “科学” 的词向量
 print(model.wv.get_vector("智能化"))
 # 查看与“科学”最相近的前10个词
-print(model.wv.most_similar("智能化", topn=20))
+print(model.wv.most_similar("自动化", topn=30))
 # 查看“科学”与“汪淼”的相似度
 print(model.wv.similarity("智能", "智能"))
 
